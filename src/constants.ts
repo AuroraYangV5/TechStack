@@ -273,6 +273,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     reason: '由 Google 开发的先进 AI 模型，支持多模态交互，功能强大且易于使用。',
     howToUse: '访问网站或下载应用，直接与 Gemini 进行对话，获取信息和生成内容。',
     tags: ['Google', 'AI', 'Chat'],
+    localIcon: 'gemini.png',
   }
 ];
 
