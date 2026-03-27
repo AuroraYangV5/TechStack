@@ -30,6 +30,25 @@ export default function App() {
                            item.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
       const matchesCategory = selectedCategory === '全部' || item.category === selectedCategory;
       return matchesSearch && matchesCategory;
+    }).sort((a, b) => {
+      // Check if item is Google-related
+      const isGoogleA = a.name.includes('Google') || a.name.includes('AI Studio') || a.name.includes('NotebookLM') || a.url.includes('google');
+      const isGoogleB = b.name.includes('Google') || b.name.includes('AI Studio') || b.name.includes('NotebookLM') || b.url.includes('google');
+      
+      // Google-related items come first
+      if (isGoogleA && !isGoogleB) return -1;
+      if (!isGoogleA && isGoogleB) return 1;
+      
+      // Then check if item is AI-related
+      const isAIA = a.category === 'AI工具' || a.tags.some(tag => tag.toLowerCase() === 'ai');
+      const isAIB = b.category === 'AI工具' || b.tags.some(tag => tag.toLowerCase() === 'ai');
+      
+      // AI-related items come next
+      if (isAIA && !isAIB) return -1;
+      if (!isAIA && isAIB) return 1;
+      
+      // Otherwise keep original order
+      return 0;
     });
   }, [searchQuery, selectedCategory]);
 

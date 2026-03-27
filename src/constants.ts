@@ -252,6 +252,27 @@ export const RECOMMENDATIONS: Recommendation[] = [
     howToUse: '在搜索框输入书名或关键词，即可在线阅读高清数字化的古籍文献。',
     tags: ['History', 'Culture', 'Reading'],
     localIcon: 'shidianguji.png',
+  },
+  {
+    id: '24',
+    name: 'Trae',
+    url: 'https://trae.com',
+    category: '开发工具',
+    description: '一个强大的 AI 代码助手，提供智能代码生成、重构和错误修复功能。',
+    reason: '界面友好，功能强大，能够极大提升开发效率。',
+    howToUse: '在 IDE 中集成 Trae 插件，使用快捷键触发 AI 辅助功能。',
+    tags: ['AI', 'IDE', '效率'],
+    localIcon: 'trae.png',
+  },
+  {
+    id: '25',
+    name: 'Gemini 应用',
+    url: 'https://gemini.google.com/app',
+    category: 'AI工具',
+    description: 'Google 的 Gemini AI 聊天应用，提供智能对话和内容生成功能。',
+    reason: '由 Google 开发的先进 AI 模型，支持多模态交互，功能强大且易于使用。',
+    howToUse: '访问网站或下载应用，直接与 Gemini 进行对话，获取信息和生成内容。',
+    tags: ['Google', 'AI', 'Chat'],
   }
 ];
 
