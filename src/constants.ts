@@ -21,6 +21,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     reason: '通过自然语言描述即可生成精美的 UI 组件，极大缩短了前端开发时间。',
     howToUse: '在输入框中描述你想要的 UI 界面，AI 会生成多个版本供你选择，点击即可复制代码。',
     tags: ['AI', 'Frontend', 'UI'],
+    localIcon: 'vo.png',
   },
   {
     id: '3',
@@ -31,7 +32,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     reason: '插件生态极其丰富，支持剪贴板管理、窗口管理、计算器、翻译等几乎所有常用功能。',
     howToUse: '安装后设置快捷键启动，通过输入关键词搜索并执行各种操作或插件。',
     tags: ['Mac', 'Efficiency', 'Tool'],
-    localIcon: 'raycast.svg',
+    localIcon: 'raycast.png',
   },
   {
     id: '4',

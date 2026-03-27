@@ -47,7 +47,7 @@ export default function App() {
 
   const getIconSource = (item: Recommendation) => {
     if (item.localIcon) {
-      return `/src/assets/${item.localIcon}`;
+      return new URL(`./assets/${item.localIcon}`, import.meta.url).href;
     }
     return `https://www.google.com/s2/favicons?domain=${new URL(item.url).hostname}&sz=128`;
   };
