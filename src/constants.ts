@@ -373,6 +373,16 @@ export const RECOMMENDATIONS: Recommendation[] = [
     howToUse: '访问网站，选择所需工具，按照提示操作即可使用。',
     tags: ['Tools', 'AI', 'Productivity'],
     localIcon: 'mikutools.png',
+  },
+  {
+    id: 'doc2x',
+    name: 'Doc2X',
+    url: 'https://doc2x.noedgeai.com/',
+    category: '效率提升',
+    description: 'AI 文档解析与翻译，可将 PDF、扫描件和图片转为 Word、Markdown、LaTeX，识别数学公式与表格。',
+    reason: '用于将文档中的内容转换为可编辑格式，便于资料整理与后续编辑。',
+    howToUse: '注册或登录账号后，按需要选择解析或翻译功能。文件在云端处理；网页版有有限免费用量及付费升级，开发者 API 独立按量计费。',
+    tags: ['PDF', 'OCR', '文档解析', '翻译'],
   }
 ];
 
