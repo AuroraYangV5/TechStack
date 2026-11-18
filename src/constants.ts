@@ -373,6 +373,16 @@ export const RECOMMENDATIONS: Recommendation[] = [
     howToUse: '访问网站，选择所需工具，按照提示操作即可使用。',
     tags: ['Tools', 'AI', 'Productivity'],
     localIcon: 'mikutools.png',
+  },
+  {
+    id: 'moerouter',
+    name: 'MoeRouter',
+    url: 'https://moerouter.com/',
+    category: '开发工具',
+    description: '统一调用多个模型的托管 API 网关，以人民币按实际用量计费。',
+    reason: '开发者可以比较模型价格、沿用兼容客户端，并按可用性切换线路。',
+    howToUse: '在网站注册，按接入文档配置 API Key 与端点，从模型目录选择模型后调用。',
+    tags: ['AI', 'API', '开发工具'],
   }
 ];
 
